@@ -1,12 +1,14 @@
-import {BrowserRouter, Routes, Route, HashRouter} from 'react-router-dom';
-import {HomePage} from './src/pagges/homePage';
+import { Routes, Route, HashRouter} from 'react-router-dom';
+//import {HomePage} from "./src/pagges/homePage";
+import { HomePage } from "./homePage";
+//import { HomePage } from "homePage";
 //import {HomePage} from './src/pagges/homePage';
-import { UseStatePage } from './src/pagges/useStatePage';
-import { UseEffectPage } from './src/pagges/useEffectPage';
-import { UseCallbackPage } from './src/pagges/useCallback';
-import { UseMemoPage } from "./src/pagges/useMemoPage";
-import { UseRefPage } from "./src/pagges/useRef";
-import {UserContextProvider} from './src/contexts/userContext';
+import { UseStatePage } from './useStatePage';
+import { UseEffectPage } from './useEffectPage';
+import { UseCallbackPage } from './useCallback';
+import { UseMemoPage } from "./useMemoPage";
+import { UseRefPage } from "./useRef";
+//import {UserContextProvider} from './contexts/userContext';
  
 
 
@@ -15,7 +17,7 @@ export const AppRoutes = () => {
 
     return (
         <HashRouter>
-                <UserContextProvider>
+            
                     <Routes>
                         <Route path="/home" element={<HomePage />} />
                         <Route path="/useState" element={<UseStatePage />} />
@@ -24,7 +26,7 @@ export const AppRoutes = () => {
                         <Route path="/useMemo" element={<UseMemoPage />} />
                         <Route path="/useRef" element={<UseRefPage />} />
                     </Routes>
-                </UserContextProvider>
+               
         </HashRouter>
       
      )

@@ -12,7 +12,7 @@ export const HomePage = () => {
     
    
             <h1>Bem Vindo ao hooks!, {user.userName}</h1>
-            <Link to="/usestate"> Vá para o usestate</Link>
+            <Link to="/useState"> Vá para o usestate</Link>
             <br/>
             <Link to="/useEffect"> Vá para o useEffect</Link>
             <br />

@@ -1,12 +1,12 @@
 //import {HomePage} from  "./pages/homePage";
-import { HomePage } from "./pagges/homePage";
-
+//import { HomePage } from "./pagges/homePage";
+import { AppRoutes } from "./pagges/routes";
 function App() {
-  return (
+  return (<>
     
-   
-   <HomePage />
-  );
+
+   <AppRoutes />
+  </>);
 }
 
 export default App;

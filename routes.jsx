@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes, Route, HashRouter} from 'react-router-dom';
 import {HomePage} from './src/pagges/homePage';
+//import {HomePage} from './src/pagges/homePage';
 import { UseStatePage } from './src/pagges/useStatePage';
 import { UseEffectPage } from './src/pagges/useEffectPage';
 import { UseCallbackPage } from './src/pagges/useCallback';
@@ -16,7 +17,7 @@ export const AppRoutes = () => {
         <HashRouter>
                 <UserContextProvider>
                     <Routes>
-                        <Route path="/homePage" element={<HomePage />} />
+                        <Route path="/home" element={<HomePage />} />
                         <Route path="/useState" element={<UseStatePage />} />
                         <Route path="/useEffect" element={<UseEffectPage />} />
                         <Route path="/useCallback" element={<UseCallbackPage />} />

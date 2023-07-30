@@ -11,7 +11,7 @@ export const HomePage = () => {
     return (<>
     
    
-            <h1>Bem Vindo ao hooks!, {user.userName}</h1>
+            <h1>Bem Vindo ao hooks novamente!, {user.userName}</h1>
             <Link to="/useState"> Vá para o usestate</Link>
             <br/>
             <Link to="/useEffect"> Vá para o useEffect</Link>
